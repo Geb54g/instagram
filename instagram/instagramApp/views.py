@@ -6,6 +6,6 @@ from django.views.generic import(
 # Create your views here.
 
 class postListView(ListView):
-    template_name="instagramAPP/post.html"
+    template_name="instagramApp/post.html"
     queryset=post.objects.all()
     context_object_name='posts'
