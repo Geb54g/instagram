@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color:white;
 }
 header{
 background-color: white;
@@ -48,11 +48,17 @@ contact_icons a{
     position: absolute;
 }
 .content_container{
-    background-color: gray;
+    background-color: white;
     padding: 30px;
     position: absolute;
     width: 100%;
     top:83px;
     left: 0px;
-
+}
+.card{
+    background-color: white;
+    margin: 0 auto;
+    width: 14px;
+    height: auto;
+    border: 0.8px;
 }
