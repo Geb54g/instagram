@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import post
+from .models import Post
 from django.shortcuts import render
 from .models import Post
 from django.views.generic import (ListView, CreateView)
@@ -10,13 +10,13 @@ from django.views.generic import(
 )
 # Create your views here.
 
-class postListView(ListView):
+class PostListView(ListView):
     template_name="instagramApp/post.html"
-    queryset=post.objects.all()
+    queryset=Post.objects.all()
     context_object_name='posts'
     
 class PostCreateView(CreateView):
-    template_name = 'insta/create.html'
+    template_name = 'instagramApp/create.html'
     form_class = PostForm
     queryset = Post.objects.all()
     success_url = '/'
