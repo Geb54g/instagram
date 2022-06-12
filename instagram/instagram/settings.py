@@ -127,9 +127,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL ='/media/'
 
-STATICFILES_DIRS = [  
-    BASE_DIR / 'static'
-]
+# STATICFILES_DIRS = [  
+#     BASE_DIR / 'static'
+# ]
 
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
